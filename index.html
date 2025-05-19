@@ -3,30 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Landing Page</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; color: #333; }
-    .hero {
-      display: flex; flex-direction: column; align-items: center;
-      justify-content: center; height: 100vh;
-      background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
-      color: #fff; text-align: center;
-    }
-    .hero h1 { font-size: 3rem; margin-bottom: .5em; }
-    
-    .hero p { font-size: 1.2rem; margin-bottom: 1.5em; }
-    .btn {
-      padding: .8em 1.5em; background: #fff; color: #000;
-      text-decoration: none; border-radius: .3em;
-      font-weight: bold;
-    }
-  </style>
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero">
-    <h1>¡Bienvenido a Mi Proyecto!</h1>
-    <p>Una descripción breve de lo que ofreces.</p>
-    <a href="#contacto" class="btn">Contáctanos</a>
-  </section>
+  <header class="profile-header">
+    <div class="avatar"></div>
+    <h1>Tu Nombre</h1>
+    <p class="subtitle">Desarrollador Web | Estudiante de CS</p>
+  </header>
+
+  <main class="container">
+    <!-- Academic Background -->
+    <section class="card academic">
+      <h2>Formación Académica</h2>
+      <div class="item">
+        <div class="icon">🎓</div>
+        <div class="info">
+          <h3>Escuela Politécnica Nacional</h3>
+          <small>2021–2025</small>
+          <ul>
+            <li>Ingeniería en Ciencias de la Computación</li>
+            <li>Temas: Estructuras de Datos, Visión por Computador</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="card skills">
+      <h2>Habilidades</h2>
+      <div class="skill">
+        <span>HTML</span>
+        <div class="bar-wrap"><div class="bar html"></div></div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="bar-wrap"><div class="bar css"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar-wrap"><div class="bar js"></div></div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="bar-wrap"><div class="bar react"></div></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="card projects">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <div class="project-card">Proyecto 1</div>
+        <div class="project-card">Proyecto 2</div>
+        <div class="project-card">Proyecto 3</div>
+        <div class="project-card">Proyecto 4</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card contact">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
