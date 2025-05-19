@@ -3,77 +3,409 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portfolio</title>
+  <meta name="description" content="Portfolio profesional de Matthew Cedeño - Desarrollador Web y estudiante de Ciencias de la Computación">
+  <meta name="keywords" content="desarrollador web, ciencias de la computación, portfolio, Matthew Cedeño">
+  <title>Matthew Cedeño | Desarrollador Web & CS</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Fuente moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="profile-header">
-    <div class="avatar"></div>
-    <h1>Tu Nombre</h1>
-    <p class="subtitle">Desarrollador Web | Estudiante de CS</p>
+    <div class="decorative-shapes">
+      <span class="shape shape1"></span>
+      <span class="shape shape2"></span>
+      <span class="shape shape3"></span>
+    </div>
+
+    <div class="container header-container">
+      <img class="avatar" src="assets/perfil.jpeg" alt="Matthew Cedeño">
+
+      <h1>Matthew Cedeño</h1>
+      <p class="subtitle">Desarrollador Web & Estudiante de CS</p>
+      <p class="tagline">Construyendo experiencias digitales modernas y funcionales</p>
+
+      <div class="social-links">
+        <a href="https://github.com/MatthewC-20?tab=repositories" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-cede%C3%B1o-b9220326b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:matthew.cedeno@epn.edu.ec" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/matthewcedeno" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <div class="header-buttons">
+        <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+        <a href="assets/CV MATTHEW CEDEÑO.pdf" class="btn btn-primary" download>Descargar CV</a>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <!-- Academic Background -->
-    <section class="card academic">
-      <h2>Formación Académica</h2>
-      <div class="item">
-        <div class="icon">🎓</div>
-        <div class="info">
-          <h3>Escuela Politécnica Nacional</h3>
-          <small>2021–2025</small>
-          <ul>
-            <li>Ingeniería en Ciencias de la Computación</li>
-            <li>Temas: Estructuras de Datos, Visión por Computador</li>
+  <nav class="main-nav" aria-label="Navegación principal">
+    <div class="container">
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#academic">Formación</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container main-grid">
+      <!-- Sobre mí -->
+      <section id="about" class="card about">
+        <h2>Sobre mí</h2>
+        <div class="card-content">
+          <p>Soy estudiante de Ingeniería en Ciencias de la Computación en la Escuela Politécnica Nacional con enfoque en desarrollo web y visión por computador. Apasionado por crear soluciones tecnológicas que resuelvan problemas reales, combino mis conocimientos técnicos con una mentalidad creativa para desarrollar aplicaciones eficientes y atractivas.</p>
+
+          <p>Actualmente estoy enfocado en el área de redes e infraestructura porque considero que hay un amplio campo por explorar. Sin embargo, mantengo una mentalidad abierta hacia proyectos en diversas áreas tecnológicas.</p>
+
+          <h3>Intereses personales</h3>
+          <ul class="interests-list">
+            <li><i class="fas fa-book"></i> Lectura de ciencia y tecnología</li>
+            <li><i class="fas fa-puzzle-piece"></i> Resolución de puzzles y ajedrez</li>
+            <li><i class="fas fa-futbol"></i> Fútbol</li>
+            <li><i class="fas fa-code-branch"></i> Exploración de nuevos frameworks</li>
+            <li><i class="fas fa-laptop-code"></i> Participación en hackathons</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills -->
-    <section class="card skills">
-      <h2>Habilidades</h2>
-      <div class="skill">
-        <span>HTML</span>
-        <div class="bar-wrap"><div class="bar html"></div></div>
-      </div>
-      <div class="skill">
-        <span>CSS</span>
-        <div class="bar-wrap"><div class="bar css"></div></div>
-      </div>
-      <div class="skill">
-        <span>JavaScript</span>
-        <div class="bar-wrap"><div class="bar js"></div></div>
-      </div>
-      <div class="skill">
-        <span>React</span>
-        <div class="bar-wrap"><div class="bar react"></div></div>
-      </div>
-    </section>
+      <!-- Formación Académica -->
+      <section id="academic" class="card academic">
+        <h2>Formación Académica</h2>
+        <div class="card-content">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Escuela Politécnica Nacional</h3>
+                <span class="timeline-date">2022–2025</span>
+                <ul>
+                  <li>Ingeniería en Ciencias de la Computación</li>
+                  <li>Enfoque en: Estructuras de Datos, Visión por Computador, Métodos Numéricos, Desarrollo Web Avanzado</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Certificaciones</h3>
+                <span class="timeline-date">2022–2024</span>
+                <ul>
+                  <li>Python - Programación Avanzada</li>
+                  <li>Cisco Packet Tracer - Redes y Configuración</li>
+                  <li>HTML5 & CSS3 - Desarrollo Web Moderno</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Projects -->
-    <section class="card projects">
-      <h2>Proyectos</h2>
-      <div class="grid">
-        <div class="project-card">Proyecto 1</div>
-        <div class="project-card">Proyecto 2</div>
-        <div class="project-card">Proyecto 3</div>
-        <div class="project-card">Proyecto 4</div>
-      </div>
-    </section>
+      <!-- Habilidades -->
+      <section id="skills" class="card skills">
+        <h2>Habilidades</h2>
+        <div class="card-content">
+          <div class="skills-category">
+            <h3>Infraestructura de Red</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Cisco Packet Tracer</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar cisco" style="--width: 90%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Configuración de Redes</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar networks" style="--width: 85%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Seguridad de Redes</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar security" style="--width: 80%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Desarrollo Frontend</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>HTML5/CSS3</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar html" style="--width: 90%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>JavaScript/TypeScript</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar js" style="--width: 80%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>React</span>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar react" style="--width: 75%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Desarrollo Backend</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Python</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar python" style="--width: 85%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>Node.js</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar nodejs" style="--width: 70%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>SQL/MongoDB</span>
+                <span class="skill-percentage">65%</span>
+              </div>
+              <div class="bar-wrap"><div class="bar db" style="--width: 65%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Herramientas & Tecnologías</h3>
+            <div class="skill-tags">
+              <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="tag"><i class="fab fa-docker"></i> Docker</span>
+              <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+              <span class="tag"><i class="fas fa-code"></i> VSCode</span>
+              <span class="tag"><i class="fas fa-eye"></i> OpenCV</span>
+              <span class="tag"><i class="fas fa-server"></i> Redes</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Contact -->
-    <section class="card contact">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Mensaje" rows="4" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      <!-- Proyectos -->
+      <section id="projects" class="card projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="card-content">
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/Robordepelea.png" alt="Robot de Combate">
+              </div>
+              <div class="project-content">
+                <h3>Robot de Combate</h3>
+                <p>Diseño y construcción de un robot de combate de una libra para competencia universitaria. Incluye sistemas de ataque, defensa y control remoto.</p>
+                <div class="tech-stack">
+                  <span class="tech">Arduino</span>
+                  <span class="tech">CAD</span>
+                  <span class="tech">Electrónica</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-code"></i> Código</a>
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/fiscup.jpg" alt="FISCup">
+              </div>
+              <div class="project-content">
+                <h3>FISCup</h3>
+                <p>Plataforma web para la gestión del torneo de fútbol de la Facultad de Ingeniería de Sistemas. Incluye sistema de inscripción, calendario y estadísticas.</p>
+                <div class="tech-stack">
+                  <span class="tech">React</span>
+                  <span class="tech">Node.js</span>
+                  <span class="tech">MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-code"></i> Código</a>
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/python.png" alt="Curso Python Cisco">
+              </div>
+              <div class="project-content">
+                <h3>Curso Python Cisco</h3>
+                <p>Desarrollo de material didáctico y proyectos prácticos para el curso de Python certificado por Cisco. Incluye ejercicios de programación y soluciones.</p>
+                <div class="tech-stack">
+                  <span class="tech">Python</span>
+                  <span class="tech">Jupyter</span>
+                  <span class="tech">Flask</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-book"></i> Recursos</a>
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-certificate"></i> Certificado</a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/gpt.jpg" alt="GPTs para Empresas">
+              </div>
+              <div class="project-content">
+                <h3>GPTs para Empresas</h3>
+                <p>Desarrollo de asistentes virtuales personalizados con GPT para pequeñas empresas. Optimiza procesos de atención al cliente, ventas y gestión interna.</p>
+                <div class="tech-stack">
+                  <span class="tech">OpenAI API</span>
+                  <span class="tech">JavaScript</span>
+                  <span class="tech">Node.js</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-briefcase"></i> Casos</a>
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contact" class="card contact">
+        <h2>Contacto</h2>
+        <div class="card-content">
+          <p>¿Interesado en trabajar juntos o tienes alguna pregunta? ¡Contáctame!</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>matthew.cedeno@epn.edu.ec</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+593 98 765 4321</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Quito, Ecuador</span>
+            </div>
+          </div>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Tu email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" placeholder="Tu mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Matthew Cedeño</h3>
+          <p>Desarrollador Web & Estudiante de CS</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Sígueme</h3>
+          <div class="social-links">
+            <a href="https://github.com/MatthewC-20" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/matthew-cede%C3%B1o-b9220326b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/matthewcedeno" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Matthew Cedeño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Funcionalidad para el formulario de contacto
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Aquí podrías agregar validación de formulario
+          alert('¡Gracias por tu mensaje! Te responderé lo antes posible.');
+          this.reset();
+        });
+      }
+
+      // Animación para las barras de habilidades
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      }, { threshold: 0.2 });
+      
+      document.querySelectorAll('.bar').forEach(bar => {
+        observer.observe(bar);
+      });
+
+      // Navegación suave
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
